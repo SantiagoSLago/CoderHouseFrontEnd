@@ -1,0 +1,17 @@
+{
+  "name": "dojo",
+  "version": "1.0.0",
+  "description": "Dojo is a web app that acts as an intermediary between individuals and tools such as streaming content, book recommendations, newsletters, and other resources related to personal growth and development. Through its forms, Dojo offers people the opportunity to subscribe to a periodic newsletter and become part of the community, allowing them to publish their own articles related to these topics.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
