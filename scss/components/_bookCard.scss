@@ -1,0 +1,19 @@
+@import './scss/utilities/variables';
+
+
+.book-catalog-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 360px;
+
+    
+
+    img{
+        width: 90%;
+        height: 90%;
+    }
+
+}

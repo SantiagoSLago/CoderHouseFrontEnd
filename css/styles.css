@@ -191,6 +191,19 @@ header {
       flex-direction: column;
       align-items: center; } }
 
+/*--COLOR PALET--*/
+/*--FONT STYLE--*/
+.book-catalog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 360px; }
+  .book-catalog-card img {
+    width: 90%;
+    height: 90%; }
+
 .logo-phrase {
   position: relative;
   top: 200px;
@@ -357,6 +370,20 @@ header {
 
 .streaming-cards-container::-webkit-scrollbar-track {
   background-color: rgba(0, 0, 0, 0.1); }
+
+#book-catalog {
+  display: flex;
+  justify-content: center; }
+
+#book-container {
+  width: 80%;
+  border-radius: 10px;
+  background-color: rgba(216, 171, 103, 0.457);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: scroll; }
 
 #filter {
   width: 70%;

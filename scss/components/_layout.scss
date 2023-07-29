@@ -1,6 +1,7 @@
 @import "./scss/utilities/mediaquery";
 @import "./scss/components/icons";
 @import "./scss/components/filter";
+@import './scss/components/bookCard';
 
 ////////////////////////// INDEX LAYOUT //////////////////////////
 
@@ -197,3 +198,27 @@
 }
 
 ////////////////////////// LIBRARRY LAYOUT //////////////////////////
+
+#book-catalog{
+  display: flex;
+  justify-content: center;
+}
+
+#book-container{
+  width: 80%;
+  border-radius: 10px;
+  background-color: rgba(216, 171, 103, 0.457);
+  
+
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  overflow-y: scroll;
+}
+
+
+
+
