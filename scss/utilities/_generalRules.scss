@@ -1,0 +1,40 @@
+@import './scss/utilities/variables';
+
+
+
+* {
+    font-family: $font;
+  }
+
+
+
+
+  a {
+    text-decoration: none;
+    color: nth($colors, 1)
+  }
+
+
+
+
+  body {
+    margin: 0%;
+    background-image: url(../img/alberto-almajano-HLTgOcUsABI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  section {
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+
+
+

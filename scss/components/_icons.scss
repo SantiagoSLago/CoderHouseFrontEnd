@@ -1,0 +1,32 @@
+@mixin icons-index-link-icons-large {
+  box-sizing: border-box;
+  font-size: 150px;
+  background-color: rgb(194, 144, 15);
+  color: rgb(255, 255, 255);
+  width: 215px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 23px;
+  box-shadow: 1px 1px 12px #c2900f;
+}
+
+@mixin icons-index-link-icons-small {
+  font-size: 70px;
+  width: 135px;
+  height: 126px;
+}
+
+@mixin icons-streaming-icons {
+  color: #c2900f;
+  font-size: 98px;
+  border: 8px solid #c2900f;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

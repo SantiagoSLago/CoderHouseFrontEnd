@@ -1,0 +1,110 @@
+@import "./scss/utilities/mediaquery";
+
+
+////////////////////////// HEADER GENERAL STYLES //////////////////////////
+header {
+  display: flex;
+  justify-content: end;
+  margin-right: 24%;
+
+  /*---Bootstrap-Navbar Styling---*/
+
+  .navbar {
+    display: none;
+    --bs-navbar-toggler-border-radius: 45px;
+  }
+
+  .navbar-dark {
+    --bs-navbar-toggler-border-color: rgb(255, 193, 7);
+  }
+
+  :root {
+    --bs-border-width: 3px;
+  }
+
+  .bg-dark {
+    background-color: transparent !important;
+  }
+
+  /*---*/
+
+  .header-nav-menu {
+    display: flex;
+  }
+
+  .header-nav-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 0%;
+    color: aliceblue;
+    list-style-type: none;
+    right: 15%;
+
+    li {
+      margin-right: 8px;
+      margin-top: 13px;
+    }
+  }
+
+  .mobile-nav-list {
+    display: none;
+  }
+
+  @include mediaquery-mq-large-960px {
+    margin-left: 260px;
+  }
+
+  @include mediaquery-mq-medium-862px {
+    align-self: flex-end;
+    justify-content: flex-end;
+    padding: 0%;
+    margin-top: 10px;
+    margin-right: 15px;
+
+    .navbar {
+      display: block;
+    }
+
+    .mobile-nav-list {
+      display: flex;
+    }
+
+    .header-nav-list {
+      li {
+        margin-top: 0%;
+      }
+    }
+
+    .header-nav-menu {
+      display: none;
+    }
+
+    
+  }
+
+  @include mediaquery-mq-samll-550px {
+    .header-nav-list {
+      flex-direction: column;
+    }
+  }
+}
+
+////////////////////////// HEADER WITH FILTER MENU //////////////////////////
+
+@include mediaquery-mq-medium-862px {
+  #filter-header {
+    align-self: center;
+    display: flex;
+    margin: 0%;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-button-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

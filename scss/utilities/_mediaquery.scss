@@ -1,0 +1,22 @@
+
+@mixin mediaquery-mq-large-960px{
+    @media screen and (max-width: 960px) {
+        @content
+    }
+};
+
+@mixin mediaquery-mq-medium-862px{
+    @media screen and (max-width: 862px) {
+        @content
+        
+    }
+};
+
+@mixin mediaquery-mq-samll-550px{
+    @media screen and (max-width: 550px) {
+        @content
+        
+    }
+};
+
+
