@@ -1,0 +1,100 @@
+@import "./scss/components/newsItem";
+@import "./scss/components/icons";
+@import "./scss/utilities/mediaquery";
+
+@mixin newsletter {
+  width: 97%;
+  height: 97%;
+
+  overflow-y: scroll;
+
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 400px 400px 300px;
+  grid-template-areas:
+    "banner banner banner"
+    "noticia1 noticia2 noticia3"
+    "noticia1 footer footer";
+  gap: 17px;
+
+  @include mediaquery-mq-medium-small-650px {
+    grid-template-rows: 400px repeat(4, 250px);
+    grid-template-areas:
+      "banner banner banner"
+      "noticia1 noticia1 noticia1"
+      "noticia2 noticia2 noticia2"
+      "noticia3 noticia3 noticia3"
+      "footer footer footer";
+  }
+
+  .banner {
+    grid-area: banner;
+    background-color: #0d7a17;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    @include mediaquery-mq-samll-550px{
+      justify-content: center;
+      text-align: center
+    }
+
+    .banner-icon {
+      @include icons-streaming-icons;
+      @include icons-newsletter-banner-icon;
+      @include mediaquery-mq-samll-550px{
+        display: none;
+      }
+    }
+
+    h2 {
+      font-weight: bolder;
+      font-size: 92px;
+      color: nth($colors, 1);
+
+      @include mediaquery-mq-medium-small-650px {
+        font-size: 70px
+      }
+    }
+  }
+
+  .news-item {
+    @include newsItem;
+  }
+
+  .news1 {
+    grid-area: noticia1;
+  }
+  .news2 {
+    grid-area: noticia2;
+    @extend .news-item;
+    background-color: rgba(165, 42, 42, 0.15);
+    border-color: brown;
+
+    .news-item-tittle-container {
+      background-color: brown;
+    }
+  }
+  .news3 {
+    grid-area: noticia3;
+    @extend .news-item;
+    border-color: rgb(122, 45, 122);
+
+    background-color: rgba(122, 45, 122, 0.164);
+    .news-item-tittle-container {
+      background-color: rgb(122, 45, 122);
+    }
+  }
+
+  .footer {
+    grid-area: footer;
+    @extend .news-item;
+
+    background-color: rgba(0, 0, 255, 0.166);
+    border-color: rgb(3, 3, 97);
+    .news-item-tittle-container {
+      background-color: rgb(3, 3, 97);
+    }
+  }
+}

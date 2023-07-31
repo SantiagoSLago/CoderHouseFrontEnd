@@ -12,11 +12,20 @@
     }
 };
 
+@mixin mediaquery-mq-medium-small-650px{
+    @media screen and (max-width: 650px) {
+        @content
+        
+    }
+};
+
 @mixin mediaquery-mq-samll-550px{
     @media screen and (max-width: 550px) {
         @content
         
     }
 };
+
+
 
 

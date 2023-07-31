@@ -199,7 +199,10 @@ header {
   align-items: center;
   justify-content: center;
   width: 250px;
-  height: 360px; }
+  height: 360px;
+  border: 5px ridge #e8ddc0;
+  border-radius: 10px;
+  margin-bottom: 7px; }
   .book-catalog-card img {
     width: 90%;
     height: 90%; }
@@ -293,7 +296,8 @@ header {
   @media screen and (max-width: 862px) {
     #streaming-page-main {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: column;
+      align-items: center; } }
 
 .streaming-icon {
   color: #c2900f;
@@ -378,12 +382,141 @@ header {
 #book-container {
   width: 80%;
   border-radius: 10px;
-  background-color: rgba(216, 171, 103, 0.457);
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   overflow-y: scroll; }
+
+#book-container::-webkit-scrollbar {
+  width: 0px; }
+
+#book-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px; }
+
+#book-container::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+#book-container::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+#newsletter-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-left: 20px;
+  margin-bottom: 10px; }
+  @media screen and (max-width: 862px) {
+    #newsletter-section {
+      margin-left: 0%;
+      width: 95%; } }
+  #newsletter-section #newsletter-page-container {
+    width: 97%;
+    height: 97%;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: 400px 400px 300px;
+    grid-template-areas: "banner banner banner" "noticia1 noticia2 noticia3" "noticia1 footer footer";
+    gap: 17px; }
+    @media screen and (max-width: 650px) {
+      #newsletter-section #newsletter-page-container {
+        grid-template-rows: 400px repeat(4, 250px);
+        grid-template-areas: "banner banner banner" "noticia1 noticia1 noticia1" "noticia2 noticia2 noticia2" "noticia3 noticia3 noticia3" "footer footer footer"; } }
+    #newsletter-section #newsletter-page-container .banner {
+      grid-area: banner;
+      background-color: #0d7a17;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: end; }
+      @media screen and (max-width: 550px) {
+        #newsletter-section #newsletter-page-container .banner {
+          justify-content: center;
+          text-align: center; } }
+      #newsletter-section #newsletter-page-container .banner .banner-icon {
+        color: #c2900f;
+        font-size: 98px;
+        border: 8px solid #c2900f;
+        border-radius: 100%;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border-color: white; }
+        @media screen and (max-width: 550px) {
+          #newsletter-section #newsletter-page-container .banner .banner-icon {
+            display: none; } }
+      #newsletter-section #newsletter-page-container .banner h2 {
+        font-weight: bolder;
+        font-size: 92px;
+        color: white; }
+        @media screen and (max-width: 650px) {
+          #newsletter-section #newsletter-page-container .banner h2 {
+            font-size: 70px; } }
+    #newsletter-section #newsletter-page-container .news-item, #newsletter-section #newsletter-page-container .news2, #newsletter-section #newsletter-page-container .news3, #newsletter-section #newsletter-page-container .footer {
+      border: 3px solid green;
+      overflow-y: scroll;
+      background-color: rgba(0, 128, 0, 0.198); }
+      #newsletter-section #newsletter-page-container .news-item .news-item-tittle-container, #newsletter-section #newsletter-page-container .news2 .news-item-tittle-container, #newsletter-section #newsletter-page-container .news3 .news-item-tittle-container, #newsletter-section #newsletter-page-container .footer .news-item-tittle-container {
+        color: white;
+        background-color: green; }
+      #newsletter-section #newsletter-page-container .news-item .news-item::-webkit-scrollbar, #newsletter-section #newsletter-page-container .news2 .news-item::-webkit-scrollbar, #newsletter-section #newsletter-page-container .news3 .news-item::-webkit-scrollbar, #newsletter-section #newsletter-page-container .footer .news-item::-webkit-scrollbar, #newsletter-section #newsletter-page-container .news-item .news2::-webkit-scrollbar, #newsletter-section #newsletter-page-container .news2 .news2::-webkit-scrollbar, #newsletter-section #newsletter-page-container .news3 .news2::-webkit-scrollbar, #newsletter-section #newsletter-page-container .footer .news2::-webkit-scrollbar, #newsletter-section #newsletter-page-container .news-item .news3::-webkit-scrollbar, #newsletter-section #newsletter-page-container .news2 .news3::-webkit-scrollbar, #newsletter-section #newsletter-page-container .news3 .news3::-webkit-scrollbar, #newsletter-section #newsletter-page-container .footer .news3::-webkit-scrollbar, #newsletter-section #newsletter-page-container .news-item .footer::-webkit-scrollbar, #newsletter-section #newsletter-page-container .news2 .footer::-webkit-scrollbar, #newsletter-section #newsletter-page-container .news3 .footer::-webkit-scrollbar, #newsletter-section #newsletter-page-container .footer .footer::-webkit-scrollbar {
+        width: 0px; }
+      #newsletter-section #newsletter-page-container .news-item .news-item::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .news2 .news-item::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .news3 .news-item::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .footer .news-item::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .news-item .news2::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .news2 .news2::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .news3 .news2::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .footer .news2::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .news-item .news3::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .news2 .news3::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .news3 .news3::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .footer .news3::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .news-item .footer::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .news2 .footer::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .news3 .footer::-webkit-scrollbar-thumb, #newsletter-section #newsletter-page-container .footer .footer::-webkit-scrollbar-thumb {
+        background-color: rgba(0, 0, 0, 0.2);
+        border-radius: 3px; }
+      #newsletter-section #newsletter-page-container .news-item .news-item::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .news2 .news-item::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .news3 .news-item::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .footer .news-item::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .news-item .news2::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .news2 .news2::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .news3 .news2::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .footer .news2::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .news-item .news3::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .news2 .news3::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .news3 .news3::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .footer .news3::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .news-item .footer::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .news2 .footer::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .news3 .footer::-webkit-scrollbar-thumb:hover, #newsletter-section #newsletter-page-container .footer .footer::-webkit-scrollbar-thumb:hover {
+        background-color: rgba(0, 0, 0, 0.3); }
+      #newsletter-section #newsletter-page-container .news-item .news-item::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .news2 .news-item::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .news3 .news-item::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .footer .news-item::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .news-item .news2::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .news2 .news2::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .news3 .news2::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .footer .news2::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .news-item .news3::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .news2 .news3::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .news3 .news3::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .footer .news3::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .news-item .footer::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .news2 .footer::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .news3 .footer::-webkit-scrollbar-track, #newsletter-section #newsletter-page-container .footer .footer::-webkit-scrollbar-track {
+        background-color: rgba(0, 0, 0, 0.1); }
+    #newsletter-section #newsletter-page-container .news1 {
+      grid-area: noticia1; }
+    #newsletter-section #newsletter-page-container .news2 {
+      grid-area: noticia2;
+      background-color: rgba(165, 42, 42, 0.15);
+      border-color: brown; }
+      #newsletter-section #newsletter-page-container .news2 .news-item-tittle-container {
+        background-color: brown; }
+    #newsletter-section #newsletter-page-container .news3 {
+      grid-area: noticia3;
+      border-color: #7a2d7a;
+      background-color: rgba(122, 45, 122, 0.164); }
+      #newsletter-section #newsletter-page-container .news3 .news-item-tittle-container {
+        background-color: #7a2d7a; }
+    #newsletter-section #newsletter-page-container .footer {
+      grid-area: footer;
+      background-color: rgba(0, 0, 255, 0.166);
+      border-color: #030361; }
+      #newsletter-section #newsletter-page-container .footer .news-item-tittle-container {
+        background-color: #030361; }
+
+.forms-main-layout {
+  display: flex;
+  justify-content: center; }
+  .forms-main-layout #forms-section {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%; }
+    .forms-main-layout #forms-section .form-container {
+      width: 40%;
+      height: 75%;
+      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      .forms-main-layout #forms-section .form-container form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
 
 #filter {
   width: 70%;
