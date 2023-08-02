@@ -1,4 +1,10 @@
 
+@mixin mediaquery-mq-extra-large-1160px{
+    @media screen and (max-width: 1160px) {
+        @content
+    }
+};
+
 @mixin mediaquery-mq-large-960px{
     @media screen and (max-width: 960px) {
         @content
@@ -25,6 +31,15 @@
         
     }
 };
+
+@mixin mediaquery-mq-extra-small-480px{
+    @media screen and (max-width: 480px) {
+        @content
+        
+    }
+};
+
+
 
 
 

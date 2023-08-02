@@ -1,0 +1,20 @@
+@mixin scrollbar($class) {
+  #{$class}::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  #{$class}::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+
+  #{$class}::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  #{$class}::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+

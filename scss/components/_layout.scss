@@ -1,9 +1,11 @@
 @import "./scss/utilities/mediaquery";
-@import "./scss/components/icons";
-@import "./scss/components/filter";
-@import "./scss/components/bookCard";
-@import "./scss/components/newsItem";
-@import "./scss/components/newsletter";
+@import "./scss/components/secondaryComponents/icons";
+@import "./scss/components/secondaryComponents/filter";
+@import "./scss/components/secondaryComponents/bookCard";
+@import "./scss/components/secondaryComponents/newsItem";
+@import "./scss/components/secondaryComponents/newsletter";
+@import "./scss/components/secondaryComponents/forms";
+@import "./scss/components/secondaryComponents/scrollbar";
 
 ////////////////////////// INDEX LAYOUT //////////////////////////
 
@@ -183,24 +185,9 @@
   }
 }
 
-.streaming-cards-container::-webkit-scrollbar {
-  width: 0px;
-}
+@include scrollbar(".streaming-cards-container");
 
-.streaming-cards-container::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-}
-
-.streaming-cards-container::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.streaming-cards-container::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-////////////////////////// LIBRARRY LAYOUT //////////////////////////
+////////////////////////// LIBRARY LAYOUT //////////////////////////
 
 #book-catalog {
   display: flex;
@@ -210,6 +197,10 @@
 #book-container {
   width: 80%;
   border-radius: 10px;
+  margin-bottom: 15px;
+  background-color: #fff2ce;
+  border: 3px inset #ddac2b;
+
 
   display: flex;
   justify-content: space-around;
@@ -218,22 +209,8 @@
 
   overflow-y: scroll;
 }
-#book-container::-webkit-scrollbar {
-  width: 0px;
-}
 
-#book-container::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-}
-
-#book-container::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-#book-container::-webkit-scrollbar-track {
-  background-color: rgba(0, 0, 0, 0.1);
-}
+@include scrollbar("#book-container");
 
 ////////////////////////// BECOME GREEN LAYOUT //////////////////////////
 
@@ -241,9 +218,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
   margin-left: 20px;
   margin-bottom: 10px;
+  border-radius: 10px;
 
   @include mediaquery-mq-medium-862px {
     margin-left: 0%;
@@ -253,37 +232,10 @@
   #newsletter-page-container {
     @include newsletter;
   }
+  @include scrollbar("#newsletter-page-container");
 }
 
 ////////////////////////// FORMS LAYOUT //////////////////////////
 .forms-main-layout {
-  display: flex;
-  justify-content: center;
-
-  #forms-section {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 95%;
-
-    .form-container {
-      width: 40%;
-      height: 75%;
-      border: 1px solid black;
-      
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-    
-
-      form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-  }
+  @include contactForm;
 }

@@ -1,12 +1,13 @@
-@import "./scss/components/newsItem";
-@import "./scss/components/icons";
+@import "./scss/components/secondaryComponents/newsItem";
+@import "./scss/components/secondaryComponents/icons";
 @import "./scss/utilities/mediaquery";
-
 @mixin newsletter {
   width: 97%;
   height: 97%;
+  border-radius: 10px;
 
   overflow-y: scroll;
+  
 
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -29,11 +30,13 @@
 
   .banner {
     grid-area: banner;
-    background-color: #0d7a17;
+    background-color: #ffffffcf;
     border: none;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    border-radius: 15px;
+    box-shadow: 13px 11px 8px rgba(0, 0, 0, 0.2), 8px -8px 8px rgba(0, 0, 0, 0.2);
 
     @include mediaquery-mq-samll-550px{
       justify-content: center;
@@ -43,6 +46,7 @@
     .banner-icon {
       @include icons-streaming-icons;
       @include icons-newsletter-banner-icon;
+      margin-left: 30px;
       @include mediaquery-mq-samll-550px{
         display: none;
       }
@@ -50,8 +54,10 @@
 
     h2 {
       font-weight: bolder;
-      font-size: 92px;
-      color: nth($colors, 1);
+      font-size: 95px;
+      color:#0e9815;
+      margin-left: 30px;
+      
 
       @include mediaquery-mq-medium-small-650px {
         font-size: 70px
@@ -69,7 +75,7 @@
   .news2 {
     grid-area: noticia2;
     @extend .news-item;
-    background-color: rgba(165, 42, 42, 0.15);
+    background-color: #ffffffde;
     border-color: brown;
 
     .news-item-tittle-container {
@@ -81,7 +87,7 @@
     @extend .news-item;
     border-color: rgb(122, 45, 122);
 
-    background-color: rgba(122, 45, 122, 0.164);
+    background-color: #ffffffde;
     .news-item-tittle-container {
       background-color: rgb(122, 45, 122);
     }
@@ -91,7 +97,7 @@
     grid-area: footer;
     @extend .news-item;
 
-    background-color: rgba(0, 0, 255, 0.166);
+    background-color: #ffffffde;
     border-color: rgb(3, 3, 97);
     .news-item-tittle-container {
       background-color: rgb(3, 3, 97);
