@@ -14,12 +14,16 @@
     color: nth($colors, 1)
   }
 
+  a:hover{
+    color: white;
+  }
+
 
 
 
   body {
     margin: 0%;
-    background-image: url(../img/alberto-almajano-HLTgOcUsABI-unsplash.jpg);
+    background-image: url(../img/Fondo_comprimido.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -91,6 +91,7 @@
     .news-item-tittle-container {
       background-color: rgb(122, 45, 122);
     }
+
   }
 
   .footer {
@@ -101,6 +102,10 @@
     border-color: rgb(3, 3, 97);
     .news-item-tittle-container {
       background-color: rgb(3, 3, 97);
+    }
+
+    .news-body-text{
+      column-count: 2;
     }
   }
 }

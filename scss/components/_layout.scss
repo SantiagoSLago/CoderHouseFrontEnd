@@ -1,4 +1,5 @@
 @import "./scss/utilities/mediaquery";
+@import './scss/utilities/mixins';
 @import "./scss/components/secondaryComponents/icons";
 @import "./scss/components/secondaryComponents/filter";
 @import "./scss/components/secondaryComponents/bookCard";
@@ -6,6 +7,8 @@
 @import "./scss/components/secondaryComponents/newsletter";
 @import "./scss/components/secondaryComponents/forms";
 @import "./scss/components/secondaryComponents/scrollbar";
+@import './scss/utilities/animations';
+
 
 ////////////////////////// INDEX LAYOUT //////////////////////////
 
@@ -26,9 +29,21 @@
   }
 }
 
+
+
 .link-icons {
   @include icons-index-link-icons-large;
 }
+/* .link-icons-> animations*/
+@include hover-grow('.link-icons');
+@include hover-change-colors('.fa-water',rgb(15, 137, 194),rgb(255, 255, 255));
+@include hover-change-colors('.fa-wind',rgb(33, 52, 60),rgb(255, 255, 255));
+@include hover-change-colors('.fa-brands',rgb(16, 116, 5),rgb(255, 255, 255));
+@include hover-change-colors('.fa-fire-flame-curved',rgb(174, 7, 7),rgb(255, 255, 255));
+
+
+
+
 
 .main-links {
   background-color: rgba(255, 255, 255, 0.9);
@@ -112,6 +127,8 @@
   display: grid;
   grid-template-columns: 80% 20%;
   column-gap: 15px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 
   @include mediaquery-mq-medium-862px {
     display: flex;
@@ -137,8 +154,7 @@
 
 .streaming-spotify,
 .streaming-youtube {
-  margin-left: 10px;
-  margin-right: 10px;
+  @include margin-left-right(10px,10px);
   width: 90%;
   display: flex;
   align-items: center;
@@ -167,16 +183,14 @@
   overflow-x: scroll;
   gap: 30px;
   flex-wrap: nowrap;
-  margin-left: 15px;
-  margin-right: 15px;
+  @include margin-left-right(15px,15px);
   height: 390px;
   border-radius: 10px;
   border: 1px solid #e8ddc0;
 
   .streaming-card {
     align-self: center;
-    margin-left: 10px;
-    margin-right: 10px;
+    @include margin-left-right(10px,10px);
     margin-top: 10px;
   }
 

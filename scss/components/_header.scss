@@ -1,4 +1,5 @@
 @import "./scss/utilities/mediaquery";
+@import './scss/utilities/animations';
 
 
 ////////////////////////// HEADER GENERAL STYLES //////////////////////////
@@ -33,6 +34,7 @@ header {
   }
 
   .header-nav-list {
+    @include underline-from-center('.header-nav-list-item');
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
@@ -45,6 +47,7 @@ header {
       margin-right: 8px;
       margin-top: 13px;
     }
+
   }
 
   .mobile-nav-list {

@@ -1,3 +1,5 @@
-@import "./scss/utilities/mediaquery";
 
-
+@mixin margin-left-right($margin_left,$margin_right){
+margin-left: $margin_left;
+margin-right: $margin_right;
+}

@@ -1,6 +1,7 @@
 @import "./scss/utilities/mixins";
 @import "./scss/utilities/mediaquery";
 @import "./scss/components/secondaryComponents/scrollbar";
+@import './scss/utilities/mixins';
 
 @mixin newsItem {
   border: 3px solid green;
@@ -11,6 +12,14 @@
   .news-item-tittle-container {
     color: white;
     background-color: green;
+  }
+
+
+  .news-body-text{
+    text-align: justify;
+    column-gap: 20px;
+    line-height: 1.6;
+    @include margin-left-right(6px,6px);
   }
 }
 @include scrollbar(".news-item");
