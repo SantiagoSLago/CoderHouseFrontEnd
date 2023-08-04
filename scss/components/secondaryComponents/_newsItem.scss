@@ -1,13 +1,15 @@
 @import "./scss/utilities/mixins";
 @import "./scss/utilities/mediaquery";
 @import "./scss/components/secondaryComponents/scrollbar";
-@import './scss/utilities/mixins';
+@import './scss/utilities/animations';
+
 
 @mixin newsItem {
   border: 3px solid green;
   border-radius: 15px;
   overflow-y: scroll;
   background-color: #ffffffde;
+  cursor: pointer;
 
   .news-item-tittle-container {
     color: white;
@@ -23,3 +25,5 @@
   }
 }
 @include scrollbar(".news-item");
+@include hover-curl-edge-right('.news-item');
+

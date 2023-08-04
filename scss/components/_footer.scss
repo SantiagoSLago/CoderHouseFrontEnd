@@ -1,5 +1,6 @@
 @import "./scss/utilities/variables";
 @import "./scss/utilities/mediaquery";
+@import "./scss/utilities/animations";
 
 footer {
   background-color: nth($colors, 2);
@@ -39,9 +40,8 @@ footer {
   }
 
   .footer-icon-container {
-    
     flex-direction: row;
-    
+
     align-items: center;
     margin-right: 50px;
 
@@ -49,6 +49,9 @@ footer {
       font-size: 25px;
       color: nth($colors, 4);
     }
+    /* .footer-icons-> animations*/
+    @include hover-grow-big(".footer-icons");
+    @include hover-change-colors(".footer-icons", black, nth($colors, 2));
   }
 
   @include mediaquery-mq-medium-862px {
@@ -56,7 +59,7 @@ footer {
     height: auto;
     text-align: center;
 
-    div{
+    div {
       width: 100%;
       margin-top: 35px;
     }
@@ -64,9 +67,6 @@ footer {
     #footer-find-us-title {
       text-align: center;
     }
-
-
-   
 
     .footer-icon-container {
       display: flex;

@@ -1,33 +1,31 @@
-@import './scss/utilities/variables';
-@import './scss/components/secondaryComponents/icons';
-@import './scss/components/secondaryComponents/buttons';
+@import "./scss/utilities/variables";
+@import "./scss/components/secondaryComponents/icons";
+@import "./scss/components/secondaryComponents/buttons";
+@import "./scss/utilities/animations";
+
+.book-catalog-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 360px;
+
+  border-radius: 10px;
+  margin-bottom: 7px;
+  margin-top: 15px;
 
 
-.book-catalog-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 360px;
-   
-
-    
-
-    
-    border-radius: 10px;
-    margin-bottom: 7px;
-    margin-top: 15px;
-
+  .book-img{
+    width: 90%;
+    height: 90%;
+    box-shadow: 13px 11px 8px rgba(0, 0, 0, 0.2),
+      8px -8px 8px rgba(0, 0, 0, 0.2);
+  }
+  @include hover-grow-small(".book-img");
   
 
-    img{
-        width: 90%;
-        height: 90%;
-        box-shadow: 13px 11px 8px rgba(0, 0, 0, 0.2), 8px -8px 8px rgba(0, 0, 0, 0.2);
-    }
-
-   .icon-star-container{
+  .icon-star-container {
     display: flex;
     align-self: start;
     justify-content: space-between;
@@ -35,13 +33,12 @@
     margin-left: 11px;
     width: 90%;
 
-    i{
-        @include icons-library-star-icon;
+    i {
+      @include icons-library-star-icon;
     }
 
-    button{
-        @include newItemButton;
+    button {
+      @include newItemButton;
     }
-   }
-
+  }
 }

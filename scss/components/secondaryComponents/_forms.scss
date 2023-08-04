@@ -1,6 +1,8 @@
 @import "./scss/utilities/mediaquery";
 @import "./scss/components/secondaryComponents/scrollbar";
 @import "./scss/components/secondaryComponents/icons";
+@import './scss/components/secondaryComponents/buttons';
+@import './scss/utilities/animations';
 
 @mixin contactForm {
   display: flex;
@@ -85,16 +87,15 @@
         }
 
         button {
+          @include selectorButton();
           margin-top: 10px;
           width: 30%;
           height: 35px;
-
-          border-radius: 8px;
-          border: none;
-          color: white;
-          background-color: #c2900f;
-          align-self: center;
         }
+        @include hover-change-colors('.selector-button',#c2900f,white);
+        @include hover-change-border('.selector-button',#c2900f);
+        
+        
       }
 
       .form-text-container {

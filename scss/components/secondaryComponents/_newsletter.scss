@@ -1,13 +1,14 @@
 @import "./scss/components/secondaryComponents/newsItem";
 @import "./scss/components/secondaryComponents/icons";
+@import "./scss/utilities/animations";
 @import "./scss/utilities/mediaquery";
+
 @mixin newsletter {
   width: 97%;
   height: 97%;
   border-radius: 10px;
 
   overflow-y: scroll;
-  
 
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -36,18 +37,19 @@
     flex-direction: column;
     justify-content: end;
     border-radius: 15px;
-    box-shadow: 13px 11px 8px rgba(0, 0, 0, 0.2), 8px -8px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 13px 11px 8px rgba(0, 0, 0, 0.2),
+      8px -8px 8px rgba(0, 0, 0, 0.2);
 
-    @include mediaquery-mq-samll-550px{
+    @include mediaquery-mq-samll-550px {
       justify-content: center;
-      text-align: center
+      text-align: center;
     }
 
     .banner-icon {
       @include icons-streaming-icons;
       @include icons-newsletter-banner-icon;
       margin-left: 30px;
-      @include mediaquery-mq-samll-550px{
+      @include mediaquery-mq-samll-550px {
         display: none;
       }
     }
@@ -55,12 +57,11 @@
     h2 {
       font-weight: bolder;
       font-size: 95px;
-      color:#0e9815;
+      color: #0e9815;
       margin-left: 30px;
-      
 
       @include mediaquery-mq-medium-small-650px {
-        font-size: 70px
+        font-size: 70px;
       }
     }
   }
@@ -68,6 +69,7 @@
   .news-item {
     @include newsItem;
   }
+
 
   .news1 {
     grid-area: noticia1;
@@ -91,7 +93,6 @@
     .news-item-tittle-container {
       background-color: rgb(122, 45, 122);
     }
-
   }
 
   .footer {
@@ -104,7 +105,7 @@
       background-color: rgb(3, 3, 97);
     }
 
-    .news-body-text{
+    .news-body-text {
       column-count: 2;
     }
   }

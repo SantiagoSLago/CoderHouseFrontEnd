@@ -1,4 +1,6 @@
 @import "./scss/utilities/mediaquery";
+@import "./scss/utilities/animations";
+@import "./scss/components/secondaryComponents/buttons";
 
 #filter {
   width: 70%;
@@ -29,7 +31,7 @@
   justify-content: center;
   align-items: center;
 
-  div{
+  div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,6 +52,8 @@
   li {
     padding-bottom: 3px;
   }
+  @include hover-grow-small(".filter-list-item");
+  @include hover-change-colors(".filter-list-item", #c2900f, transparent);
 
   .checkbox {
     display: flex;
@@ -66,13 +70,11 @@
 
   .btn-search-autor {
     margin-top: 7px;
-    border: none;
-    background-color: #c2900f;
-    color: white;
     width: 85px;
-    border-radius: 10px;
-    align-self: center;
+    @include selectorButton;
   }
+  @include hover-change-colors(".selector-button", #c2900f, white);
+  @include hover-change-border(".selector-button", #c2900f);
 }
 
 .offcanvas {

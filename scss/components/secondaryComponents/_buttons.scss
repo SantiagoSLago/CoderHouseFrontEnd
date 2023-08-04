@@ -1,4 +1,7 @@
 
+@import './scss/utilities/animations';
+
+
 @mixin newItemButton{
 
     border-radius: 15px;
@@ -7,4 +10,13 @@
     color: white;
     width: 65px;
 
+}
+
+@mixin selectorButton{
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #c2900f;
+    align-self: center;
+   
 }

@@ -1,5 +1,5 @@
 @import "./scss/utilities/mediaquery";
-@import './scss/utilities/mixins';
+@import "./scss/utilities/mixins";
 @import "./scss/components/secondaryComponents/icons";
 @import "./scss/components/secondaryComponents/filter";
 @import "./scss/components/secondaryComponents/bookCard";
@@ -7,8 +7,7 @@
 @import "./scss/components/secondaryComponents/newsletter";
 @import "./scss/components/secondaryComponents/forms";
 @import "./scss/components/secondaryComponents/scrollbar";
-@import './scss/utilities/animations';
-
+@import "./scss/utilities/animations";
 
 ////////////////////////// INDEX LAYOUT //////////////////////////
 
@@ -29,21 +28,27 @@
   }
 }
 
-
-
 .link-icons {
   @include icons-index-link-icons-large;
 }
 /* .link-icons-> animations*/
-@include hover-grow('.link-icons');
-@include hover-change-colors('.fa-water',rgb(15, 137, 194),rgb(255, 255, 255));
-@include hover-change-colors('.fa-wind',rgb(33, 52, 60),rgb(255, 255, 255));
-@include hover-change-colors('.fa-brands',rgb(16, 116, 5),rgb(255, 255, 255));
-@include hover-change-colors('.fa-fire-flame-curved',rgb(174, 7, 7),rgb(255, 255, 255));
-
-
-
-
+@include hover-grow-small(".link-icons");
+@include hover-change-colors(
+  ".fa-water",
+  rgb(15, 137, 194),
+  rgb(255, 255, 255)
+);
+@include hover-change-colors(".fa-wind", rgb(33, 52, 60), rgb(255, 255, 255));
+@include hover-change-colors(
+  ".fa-pagelines",
+  rgb(16, 116, 5),
+  rgb(255, 255, 255)
+);
+@include hover-change-colors(
+  ".fa-fire-flame-curved",
+  rgb(174, 7, 7),
+  rgb(255, 255, 255)
+);
 
 .main-links {
   background-color: rgba(255, 255, 255, 0.9);
@@ -120,7 +125,7 @@
 }
 
 ////////////////////////// STREAMING LAYOUT //////////////////////////
-
+@include scrollbar(".streaming-cards-container");
 /*---Main Gneneral Settings--*/
 
 #streaming-page-main {
@@ -154,7 +159,7 @@
 
 .streaming-spotify,
 .streaming-youtube {
-  @include margin-left-right(10px,10px);
+  @include margin-left-right(10px, 10px);
   width: 90%;
   display: flex;
   align-items: center;
@@ -183,14 +188,14 @@
   overflow-x: scroll;
   gap: 30px;
   flex-wrap: nowrap;
-  @include margin-left-right(15px,15px);
+  @include margin-left-right(15px, 15px);
   height: 390px;
   border-radius: 10px;
   border: 1px solid #e8ddc0;
 
   .streaming-card {
     align-self: center;
-    @include margin-left-right(10px,10px);
+    @include margin-left-right(10px, 10px);
     margin-top: 10px;
   }
 
@@ -202,7 +207,7 @@
 @include scrollbar(".streaming-cards-container");
 
 ////////////////////////// LIBRARY LAYOUT //////////////////////////
-
+@include scrollbar("#book-container");
 #book-catalog {
   display: flex;
   justify-content: center;
@@ -215,7 +220,6 @@
   background-color: #fff2ce;
   border: 3px inset #ddac2b;
 
-
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -223,8 +227,6 @@
 
   overflow-y: scroll;
 }
-
-@include scrollbar("#book-container");
 
 ////////////////////////// BECOME GREEN LAYOUT //////////////////////////
 

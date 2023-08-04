@@ -2,6 +2,20 @@
 <html lang="en">
 
 <head>
+
+    <!---META DESCRIPTION-->
+    <meta name="description" content="Welcome to our newsletter, the place where you'll discover firsthand and up-to-date valuable information from all members of our community. 
+    Dive into content that revolves around habits that will connect you with the enchanting magic of nature
+">
+    <!---META KEYWORDS-->
+    <meta name="keywords"
+        content="Dojo,Personal Development, Mindfullnes,Newsletter,Ennlightment,Self-Discovery,Entertainment,
+        Nature, Become Green, Green Habits, Community">
+    <!---OPEN GRAPH-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="DOJO | Become Green">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,8 +29,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Become Green</title>
+    <link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
+    <title>DOJO | Become Green</title>
 </head>
 
 <body>
@@ -27,11 +43,11 @@
             <div class="collapse" id="navbarToggleExternalContent">
                 <div class="bg-dark p-4">
                     <ul class="header-nav-list mobile-nav-list">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/library.html">Library</a></li>
-                        <li><a href="../pages/streaming.html">Streaming</a></li>
-                        <li><a href="../pages/becomeGreen.html">Become Green</a></li>
-                        <li><a href="../pages/form.html">Contact Us</a></li>
+                        <li class="header-nav-list-item"><a href="../index.html">Home</a></li>
+                        <li class="header-nav-list-item"><a href="../pages/library.html">Library</a></li>
+                        <li class="header-nav-list-item"><a href="../pages/streaming.html">Streaming</a></li>
+                        <li class="header-nav-list-item"><a href="../pages/becomeGreen.html">Become Green</a></li>
+                        <li class="header-nav-list-item"><a href="../pages/form.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,11 +63,11 @@
         </div>
         <div class="header-nav-menu">
             <ul class="header-nav-list">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../pages/library.html">Library</a></li>
-                <li><a href="../pages/streaming.html">Streaming</a></li>
-                <li><a href="../pages/becomeGreen.html">Become Green</a></li>
-                <li><a href="../pages/form.html">Contact Us</a></li>
+                <li class="header-nav-list-item"><a href="../index.html">Home</a></li>
+                <li class="header-nav-list-item"><a href="../pages/library.html">Library</a></li>
+                <li class="header-nav-list-item"><a href="../pages/streaming.html">Streaming</a></li>
+                <li class="header-nav-list-item"><a href="../pages/becomeGreen.html">Become Green</a></li>
+                <li class="header-nav-list-item"><a href="../pages/form.html">Contact Us</a></li>
                 <img src="../img/Ellipse 1.png" alt="">
             </ul>
         </div>
@@ -65,12 +81,12 @@
                 <div class="filter-section">
                     <h4>Topic</h4>
                     <ul>
-                        <li>Meditation</li>
-                        <li>Ted Talk</li>
-                        <li>Audiobooks</li>
-                        <li>Tutorial</li>
-                        <li>Music</li>
-                        <li>Seminar</li>
+                        <li class="filter-list-item">Meditation</li>
+                        <li class="filter-list-item">Ted Talk</li>
+                        <li class="filter-list-item">Audiobooks</li>
+                        <li class="filter-list-item">Tutorial</li>
+                        <li class="filter-list-item">Music</li>
+                        <li class="filter-list-item">Seminar</li>
                     </ul>
                 </div>
                 <hr>
@@ -84,7 +100,7 @@
                 <div class="filter-section">
                     <h4>Autor</h4>
                     <input type="search" class="input-search-autor">
-                    <button class="btn-search-autor">search</button>
+                    <button class="btn-search-autor selector-button">search</button>
                 </div>
                 <hr>
                 <div class="filter-section">
@@ -98,17 +114,18 @@
         <section id="newsletter-section">
             <div id="newsletter-page-container">
 
-                <div class="newsletter banner">
+                <div class="newsletter banner animate__animated animate__bounceInDown">
                     <i class="fa-solid fa-seedling banner-icon"></i>
                     <h2>Become Green Newsletter</h2>
                 </div>
-                <div class="newsletter news1 news-item">
+                <div class="newsletter news1 news-item animate__animated animate__bounceInLeft">
                     <div class="news-item-tittle-container">
                         <h3>Embracing Sustainability:</h3>
                         <h5> How to Reduce Your Meat Consumption</h5>
                     </div>
                     <div>
-                        <p class="news-body-text">Sustainability has become a buzzword in recent years as the global community recognizes the
+                        <p class="news-body-text">Sustainability has become a buzzword in recent years as the global
+                            community recognizes the
                             urgent need to preserve our environment and resources for future generations. One of the
                             most impactful ways individuals can contribute to sustainability is by adopting a conscious
                             and mindful approach to their dietary choices. Reducing meat consumption is a powerful step
@@ -137,13 +154,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="newsletter news-item news2">
+                <div class="newsletter news-item news2 animate__animated animate__bounceInRight">
                     <div class="news-item-tittle-container news2--tittleContainer">
                         <h3>Digging Into Sustainability: </h3>
                         <h5>A Step-by-Step Guide on How to Master Composting at Home</h5>
                     </div>
                     <div>
-                        <p class="news-body-text">Composting is a simple yet powerful practice that allows individuals to contribute actively
+                        <p class="news-body-text">Composting is a simple yet powerful practice that allows individuals
+                            to contribute actively
                             to sustainability by reducing waste and enriching the soil. By composting organic materials,
                             you can divert waste from landfills, decrease greenhouse gas emissions, and create
                             nutrient-rich soil for your garden. In this step-by-step guide, we will explore the ins and
@@ -176,13 +194,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="newsletter news3 news-item">
+                <div class="newsletter news3 news-item animate__animated animate__bounceInRight">
                     <div class="news-item-tittle-container news3--tittleContainer">
                         <h3>Green Fingers: </h3>
                         <h5>How to Create Your Own Vibrant Garden Paradise</h5>
                     </div>
                     <div>
-                        <p class="news-body-text">Embracing the art of gardening can be a truly rewarding experience, allowing you to cultivate
+                        <p class="news-body-text">Embracing the art of gardening can be a truly rewarding experience,
+                            allowing you to cultivate
                             your own natural sanctuary right at home. With the touch of creativity and care, you can
                             transform any outdoor space into a vibrant garden paradise, where nature thrives and beauty
                             abounds. In this article, we'll provide you with essential tips and insights on how to
@@ -205,13 +224,14 @@
                         </p>
                     </div>
                 </div>
-                <div class="newsletter footer">
+                <div class="newsletter footer animate__animated animate__bounceInUp">
                     <div class="news-item-tittle-container">
                         <h3>Seeking Serenity: Ideal Places for Meditation:</h3>
                         <h5>Discovering Recommendations for Optimal Meditation Experiences</h5>
                     </div>
                     <div>
-                        <p class="news-body-text">In today's fast-paced world, finding moments of peace and tranquility has become a precious
+                        <p class="news-body-text">In today's fast-paced world, finding moments of peace and tranquility
+                            has become a precious
                             commodity. For many, meditation offers a pathway to escape the chaos and connect with inner
                             peace. While meditation can be practiced anywhere, certain locations possess a unique energy
                             and ambiance that enhances the meditative experience. In this article, we explore some of
@@ -245,18 +265,18 @@
 
             </div>
         </section>
-        <section id="filter">
+        <section id="filter" class="animate__animated animate__fadeInDown">
             <h2>Filter</h2>
             <hr>
             <div class="filter-section">
                 <h4>Topic</h4>
                 <ul>
-                    <li>Meditation</li>
-                    <li>Ted Talk</li>
-                    <li>Audiobooks</li>
-                    <li>Tutorial</li>
-                    <li>Music</li>
-                    <li>Seminar</li>
+                    <li class="filter-list-item">Meditation</li>
+                    <li class="filter-list-item">Ted Talk</li>
+                    <li class="filter-list-item">Audiobooks</li>
+                    <li class="filter-list-item">Tutorial</li>
+                    <li class="filter-list-item">Music</li>
+                    <li class="filter-list-item">Seminar</li>
                 </ul>
             </div>
             <hr>
@@ -270,7 +290,7 @@
             <div class="filter-section">
                 <h4>Autor</h4>
                 <input type="search" class="input-search-autor">
-                <button class="btn-search-autor">search</button>
+                <button class="btn-search-autor selector-button">search</button>
             </div>
             <hr>
             <div class="filter-section">
@@ -301,7 +321,7 @@
                 <i class="fa-brands fa-twitter footer-icons"></i>
             </div>
         </div>
-        
+
 
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

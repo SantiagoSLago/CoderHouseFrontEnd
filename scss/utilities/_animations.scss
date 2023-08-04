@@ -1,6 +1,6 @@
 @import "./scss/utilities/variables";
 
-/*---Hover Animations---*/
+/*---Hover Underline---*/
 
 @mixin underline-from-center($class) {
   #{$class} {
@@ -36,17 +36,18 @@
   }
 }
 
-@mixin hover-grow($class) {
-#{$class} {
-    display: inline-block;
+/*---Hover Grow---*/
+
+@mixin hover-grow-small($class) {
+  #{$class} {
     vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transform: perspective(4px) translateZ(0);
+    transform: perspective(4px) translateZ(0);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform;
+    cursor: pointer;
   }
   #{$class}:hover,
   #{$class}:focus,
@@ -56,15 +57,77 @@
   }
 }
 
-@mixin hover-change-colors($class,$icon_color,$bg_color){
+@mixin hover-grow-big($class) {
+  #{$class} {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(4px) translateZ(0);
+    transform: perspective(4px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    cursor: pointer;
+  }
+  #{$class}:hover,
+  #{$class}:focus,
+  #{$class}:active {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+}
 
-    #{$class}{
-        transition: all 0.5s
-    }
 
-    #{$class}:hover{
-        color: $icon_color;
-        background-color: $bg_color;
-    }
+/*---Hover Transitions---*/
 
+@mixin hover-change-colors($class, $icon_color, $bg_color) {
+  #{$class} {
+    transition: all 0.5s;
+  }
+
+  #{$class}:hover {
+    color: $icon_color;
+    background-color: $bg_color;
+  }
+}
+
+@mixin hover-change-border($class, $border_color) {
+  #{$class}:hover {
+    border: 1px solid $border_color;
+  }
+}
+
+/*--Others--*/
+
+@mixin hover-curl-edge-right($class){
+  #{$class} {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+  }
+  #{$class}:before {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    top: 0;
+    right: 0;
+    background: white;
+    /* IE9 */
+    background: linear-gradient(225deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
+  }
+  #{$class}:hover:before, #{$class}:focus:before, #{$class}:active:before {
+    width: 25px;
+    height: 25px;
+  }
 }
