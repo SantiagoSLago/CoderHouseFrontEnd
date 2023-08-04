@@ -29,9 +29,9 @@
     display: flex;
     align-self: start;
     justify-content: space-between;
+    width: 90%;
     margin-top: 4px;
     margin-left: 11px;
-    width: 90%;
 
     i {
       @include icons-library-star-icon;

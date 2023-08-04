@@ -7,29 +7,29 @@
 /*---Hover Transitions---*/
 /*--Others--*/
 footer {
-  background-color: #c2900f;
-  height: 150px;
-  color: aliceblue;
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  height: 150px;
+  background-color: #c2900f;
+  color: aliceblue; }
   footer div {
-    width: 230px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    width: 230px; }
   footer h6 {
+    text-align: center;
     text-decoration: underline;
-    text-underline-offset: 0.5em;
-    text-align: center; }
+    text-underline-offset: 0.5em; }
   footer #footer-find-us-title {
     text-align: start; }
   footer ul {
-    list-style-type: none;
-    padding: 0%;
-    margin: 0%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
     font-size: small; }
     footer ul li {
       margin-bottom: 5px; }
@@ -65,8 +65,8 @@ footer {
   @media screen and (max-width: 862px) {
     footer {
       flex-direction: column;
-      height: auto;
-      text-align: center; }
+      text-align: center;
+      height: auto; }
       footer div {
         width: 100%;
         margin-top: 35px; }
@@ -75,8 +75,8 @@ footer {
       footer .footer-icon-container {
         display: flex;
         justify-content: space-evenly;
-        padding-bottom: 8px;
-        width: 100%; } }
+        width: 100%;
+        padding-bottom: 8px; } }
 
 /*--COLOR PALET--*/
 /*--FONT STYLE--*/
@@ -133,9 +133,9 @@ header {
     align-items: flex-start;
     justify-content: space-evenly;
     padding: 0%;
-    color: aliceblue;
     list-style-type: none;
-    right: 15%; }
+    right: 15%;
+    color: aliceblue; }
     header .header-nav-list .header-nav-list-item {
       display: inline-block;
       vertical-align: middle;
@@ -171,7 +171,9 @@ header {
     display: none; }
   @media screen and (max-width: 960px) {
     header {
-      margin-left: 260px; } }
+      margin-left: 260px; }
+      header ul {
+        width: 440px; } }
   @media screen and (max-width: 862px) {
     header {
       align-self: flex-end;
@@ -189,20 +191,22 @@ header {
         display: none; } }
   @media screen and (max-width: 550px) {
     header .header-nav-list {
-      flex-direction: column; } }
+      flex-direction: column; }
+    header ul {
+      width: auto; } }
 
 @media screen and (max-width: 862px) {
   #filter-header {
+    display: flex;
+    justify-content: center;
     align-self: center;
-    display: flex;
     margin: 0%;
-    width: 100%;
-    justify-content: center; }
+    width: 100%; }
   .header-button-container {
-    width: 90%;
-    display: flex;
     justify-content: space-between;
-    align-items: center; } }
+    align-items: center;
+    width: 90%;
+    display: flex; } }
 
 /*--COLOR PALET--*/
 /*--FONT STYLE--*/
@@ -217,15 +221,15 @@ header {
 /*---Hover Transitions---*/
 /*--Others--*/
 #filter {
-  width: 70%;
-  border-radius: 90px;
-  background-color: rgba(255, 255, 255, 0.506);
   justify-self: center;
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  width: 70%;
+  border-radius: 90px;
+  background-color: rgba(255, 255, 255, 0.506); }
   #filter hr {
     width: 50%; }
 
@@ -233,12 +237,12 @@ header {
   display: none; }
 
 .filter-section {
-  color: #212529;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 100%;
+  color: #212529; }
   .filter-section div {
     display: flex;
     flex-direction: column;
@@ -246,8 +250,8 @@ header {
     text-align: center;
     margin-bottom: 35px; }
   .filter-section h4 {
-    color: #c2900f;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: #c2900f; }
   .filter-section ul {
     list-style: none;
     padding: 0%; }
@@ -277,18 +281,18 @@ header {
     flex-direction: column; }
   .filter-section .input-search-autor,
   .filter-section .input-search-date {
-    border: 1px solid grey;
-    border-radius: 8px;
+    align-self: center;
     width: 95%;
-    align-self: center; }
+    border: 1px solid grey;
+    border-radius: 8px; }
   .filter-section .btn-search-autor {
     margin-top: 7px;
     width: 85px;
-    border-radius: 8px;
+    align-self: center;
     border: none;
-    color: white;
+    border-radius: 8px;
     background-color: #c2900f;
-    align-self: center; }
+    color: white; }
   .filter-section .selector-button {
     transition: all 0.5s; }
   .filter-section .selector-button:hover {
@@ -307,8 +311,8 @@ header {
     display: block;
     align-self: center;
     justify-self: center;
-    margin-right: 15px;
     width: 80px;
+    margin-right: 15px;
     border-radius: 100px;
     border: 3px solid #ffc107; }
   .btn-primary {
@@ -367,17 +371,17 @@ header {
     display: flex;
     align-self: start;
     justify-content: space-between;
+    width: 90%;
     margin-top: 4px;
-    margin-left: 11px;
-    width: 90%; }
+    margin-left: 11px; }
     .book-catalog-card .icon-star-container i {
       color: #c2900f; }
     .book-catalog-card .icon-star-container button {
-      border-radius: 15px;
+      width: 65px;
       border: 2px solid white;
+      border-radius: 15px;
       background-color: #1842b5;
-      color: white;
-      width: 65px; }
+      color: white; }
 
 /*--COLOR PALET--*/
 /*--FONT STYLE--*/
@@ -501,14 +505,14 @@ header {
 /*--Others--*/
 .logo-phrase {
   position: relative;
+  width: 350px;
   top: 200px;
-  left: 350px;
-  width: 350px; }
+  left: 350px; }
   @media screen and (max-width: 862px) {
     .logo-phrase {
+      width: 250px;
       top: 100px;
-      left: 25px;
-      width: 250px; } }
+      left: 25px; } }
   @media screen and (max-width: 550px) {
     .logo-phrase {
       width: 250px; } }
@@ -575,13 +579,13 @@ header {
   background-color: rgba(255, 255, 255, 0.9);
   display: grid; }
   .main-links p {
-    font-size: 17px;
     text-align: center;
     width: 40%;
+    font-size: 17px;
     font-weight: bold; }
   .main-links h2 {
-    font-size: 50px;
     text-align: center;
+    font-size: 50px;
     margin-bottom: 25px; }
   .main-links hr {
     background-color: #c2900f;
@@ -595,8 +599,8 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    text-align: center; }
+    text-align: center;
+    gap: 10px; }
     .main-links .main-links-link-container .icon-card {
       display: flex;
       flex-direction: column;
@@ -604,20 +608,20 @@ header {
       justify-content: center; }
       .main-links .main-links-link-container .icon-card h4 {
         text-align: center;
-        color: #c2900f;
         font-size: 25px;
-        margin-top: 10px; }
+        margin-top: 10px;
+        color: #c2900f; }
   @media screen and (max-width: 862px) {
     .main-links {
-      height: 100%;
       display: flex;
       flex-direction: column;
+      height: 100%;
       box-sizing: border-box; }
       .main-links .main-links-link-container {
         display: flex;
         flex-direction: column;
-        height: fit-content;
-        align-items: center; }
+        align-items: center;
+        height: fit-content; }
       .main-links .icon-card {
         margin-top: 15px; }
       .main-links .link-icons {
@@ -642,9 +646,9 @@ header {
 #streaming-page-main {
   display: grid;
   grid-template-columns: 80% 20%;
-  column-gap: 15px;
   margin-bottom: 50px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  column-gap: 15px; }
   @media screen and (max-width: 862px) {
     #streaming-page-main {
       display: flex;
@@ -675,10 +679,10 @@ header {
 .streaming-youtube {
   margin-left: 10px;
   margin-right: 10px;
-  width: 90%;
   display: flex;
   align-items: center;
-  align-self: center; }
+  align-self: center;
+  width: 90%; }
   @media screen and (max-width: 862px) {
     .streaming-spotify,
     .streaming-youtube {
@@ -691,15 +695,15 @@ header {
   @media screen and (max-width: 862px) {
     .streaming-title-card h2 {
       display: block;
-      color: #332f2f;
       font-size: 35px;
-      border-bottom: 4px solid #ffc107; } }
+      border-bottom: 4px solid #ffc107;
+      color: #332f2f; } }
 
 .streaming-cards-container {
   display: flex;
-  overflow-x: scroll;
-  gap: 30px;
   flex-wrap: nowrap;
+  gap: 30px;
+  overflow-x: scroll;
   margin-left: 15px;
   margin-right: 15px;
   height: 390px;
@@ -710,6 +714,20 @@ header {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px; }
+  .streaming-cards-container .streaming-card {
+    vertical-align: middle;
+    -webkit-transform: perspective(4px) translateZ(0);
+    transform: perspective(4px) translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    cursor: pointer; }
+  .streaming-cards-container .streaming-card:hover,
+  .streaming-cards-container .streaming-card:focus,
+  .streaming-cards-container .streaming-card:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
   @media screen and (max-width: 862px) {
     .streaming-cards-container {
       flex-direction: column; } }
@@ -745,53 +763,53 @@ header {
   justify-content: center; }
 
 #book-container {
-  width: 80%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  background-color: #fff2ce;
-  border: 3px inset #ddac2b;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  overflow-y: scroll; }
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  overflow-y: scroll;
+  border: 3px inset #ddac2b;
+  background-color: #fff2ce; }
 
 #newsletter-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-left: 2px solid white;
-  border-right: 2px solid white;
   margin-left: 20px;
   margin-bottom: 10px;
-  border-radius: 10px; }
+  border-radius: 10px;
+  border-left: 2px solid white;
+  border-right: 2px solid white; }
   @media screen and (max-width: 862px) {
     #newsletter-section {
       margin-left: 0%;
       width: 95%; } }
   #newsletter-section #newsletter-page-container {
-    width: 97%;
-    height: 97%;
-    border-radius: 10px;
-    overflow-y: scroll;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 400px 400px 300px;
     grid-template-areas: "banner banner banner" "noticia1 noticia2 noticia3" "noticia1 footer footer";
-    gap: 17px; }
+    gap: 17px;
+    width: 97%;
+    height: 97%;
+    border-radius: 10px;
+    overflow-y: scroll; }
     @media screen and (max-width: 650px) {
       #newsletter-section #newsletter-page-container {
         grid-template-rows: 400px repeat(4, 250px);
         grid-template-areas: "banner banner banner" "noticia1 noticia1 noticia1" "noticia2 noticia2 noticia2" "noticia3 noticia3 noticia3" "footer footer footer"; } }
     #newsletter-section #newsletter-page-container .banner {
-      grid-area: banner;
-      background-color: #ffffffcf;
-      border: none;
       display: flex;
       flex-direction: column;
       justify-content: end;
+      grid-area: banner;
+      border: none;
       border-radius: 15px;
-      box-shadow: 13px 11px 8px rgba(0, 0, 0, 0.2), 8px -8px 8px rgba(0, 0, 0, 0.2); }
+      box-shadow: 13px 11px 8px rgba(0, 0, 0, 0.2), 8px -8px 8px rgba(0, 0, 0, 0.2);
+      background-color: #ffffffcf; }
       @media screen and (max-width: 550px) {
         #newsletter-section #newsletter-page-container .banner {
           justify-content: center;
@@ -813,10 +831,10 @@ header {
           #newsletter-section #newsletter-page-container .banner .banner-icon {
             display: none; } }
       #newsletter-section #newsletter-page-container .banner h2 {
+        margin-left: 30px;
         font-weight: bolder;
         font-size: 95px;
-        color: #0e9815;
-        margin-left: 30px; }
+        color: #0e9815; }
         @media screen and (max-width: 650px) {
           #newsletter-section #newsletter-page-container .banner h2 {
             font-size: 70px; } }
@@ -918,15 +936,15 @@ header {
         flex-direction: column;
         align-items: center; }
       .forms-main-layout #forms-section .form-container .form-title-icon {
-        color: #c2900f;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 50px;
         width: 95px;
         height: 89px;
         border: 3px solid #c2900f;
         border-radius: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
+        color: #c2900f; }
       .forms-main-layout #forms-section .form-container h3 {
         font-weight: bolder;
         border-bottom: 3px solid #c2900f; }
@@ -950,14 +968,14 @@ header {
           width: 70%;
           margin-left: 10px; }
         .forms-main-layout #forms-section .form-container form button {
-          border-radius: 8px;
-          border: none;
-          color: white;
-          background-color: #c2900f;
           align-self: center;
-          margin-top: 10px;
+          border: none;
+          border-radius: 8px;
+          background-color: #c2900f;
+          color: white;
           width: 30%;
-          height: 35px; }
+          height: 35px;
+          margin-top: 10px; }
         .forms-main-layout #forms-section .form-container form .selector-button {
           transition: all 0.5s; }
         .forms-main-layout #forms-section .form-container form .selector-button:hover {
@@ -976,7 +994,8 @@ header {
           padding: 0%;
           list-style-type: none; }
           .forms-main-layout #forms-section .form-container .form-text-container ul span {
-            text-decoration: underline 2px solid #c2900f; }
+            text-decoration: underline 2px solid #c2900f;
+            text-underline-offset: 0.2em; }
 
 /*--COLOR PALET--*/
 /*--FONT STYLE--*/
@@ -991,15 +1010,15 @@ header {
 /*---Hover Transitions---*/
 /*--Others--*/
 #filter {
-  width: 70%;
-  border-radius: 90px;
-  background-color: rgba(255, 255, 255, 0.506);
   justify-self: center;
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  width: 70%;
+  border-radius: 90px;
+  background-color: rgba(255, 255, 255, 0.506); }
   #filter hr {
     width: 50%; }
 
@@ -1007,12 +1026,12 @@ header {
   display: none; }
 
 .filter-section {
-  color: #212529;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  height: 100%;
+  color: #212529; }
   .filter-section div {
     display: flex;
     flex-direction: column;
@@ -1020,8 +1039,8 @@ header {
     text-align: center;
     margin-bottom: 35px; }
   .filter-section h4 {
-    color: #c2900f;
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: #c2900f; }
   .filter-section ul {
     list-style: none;
     padding: 0%; }
@@ -1051,18 +1070,18 @@ header {
     flex-direction: column; }
   .filter-section .input-search-autor,
   .filter-section .input-search-date {
-    border: 1px solid grey;
-    border-radius: 8px;
+    align-self: center;
     width: 95%;
-    align-self: center; }
+    border: 1px solid grey;
+    border-radius: 8px; }
   .filter-section .btn-search-autor {
     margin-top: 7px;
     width: 85px;
-    border-radius: 8px;
+    align-self: center;
     border: none;
-    color: white;
+    border-radius: 8px;
     background-color: #c2900f;
-    align-self: center; }
+    color: white; }
   .filter-section .selector-button {
     transition: all 0.5s; }
   .filter-section .selector-button:hover {
@@ -1081,8 +1100,8 @@ header {
     display: block;
     align-self: center;
     justify-self: center;
-    margin-right: 15px;
     width: 80px;
+    margin-right: 15px;
     border-radius: 100px;
     border: 3px solid #ffc107; }
   .btn-primary {

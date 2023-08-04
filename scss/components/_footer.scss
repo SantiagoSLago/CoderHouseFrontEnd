@@ -3,23 +3,23 @@
 @import "./scss/utilities/animations";
 
 footer {
-  background-color: nth($colors, 2);
-  height: 150px;
-  color: nth($colors, 4);
   display: flex;
   justify-content: space-around;
+  height: 150px;
+  background-color: nth($colors, 2);
+  color: nth($colors, 4);
 
   div {
-    width: 230px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    width: 230px;
   }
 
   h6 {
+    text-align: center;
     text-decoration: underline;
     text-underline-offset: 0.5em;
-    text-align: center;
   }
 
   #footer-find-us-title {
@@ -27,12 +27,12 @@ footer {
   }
 
   ul {
-    list-style-type: none;
-    padding: 0%;
-    margin: 0%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
     font-size: small;
     li {
       margin-bottom: 5px;
@@ -41,7 +41,6 @@ footer {
 
   .footer-icon-container {
     flex-direction: row;
-
     align-items: center;
     margin-right: 50px;
 
@@ -56,8 +55,8 @@ footer {
 
   @include mediaquery-mq-medium-862px {
     flex-direction: column;
-    height: auto;
     text-align: center;
+    height: auto;
 
     div {
       width: 100%;
@@ -71,8 +70,8 @@ footer {
     .footer-icon-container {
       display: flex;
       justify-content: space-evenly;
-      padding-bottom: 8px;
       width: 100%;
+      padding-bottom: 8px;
     }
   }
 }

@@ -4,12 +4,6 @@
 @import "./scss/utilities/mediaquery";
 
 @mixin newsletter {
-  width: 97%;
-  height: 97%;
-  border-radius: 10px;
-
-  overflow-y: scroll;
-
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: 400px 400px 300px;
@@ -17,7 +11,13 @@
     "banner banner banner"
     "noticia1 noticia2 noticia3"
     "noticia1 footer footer";
+
   gap: 17px;
+  width: 97%;
+  height: 97%;
+  border-radius: 10px;
+  overflow-y: scroll;
+
 
   @include mediaquery-mq-medium-small-650px {
     grid-template-rows: 400px repeat(4, 250px);
@@ -30,15 +30,15 @@
   }
 
   .banner {
-    grid-area: banner;
-    background-color: #ffffffcf;
-    border: none;
     display: flex;
     flex-direction: column;
     justify-content: end;
+    grid-area: banner;
+    border: none;
     border-radius: 15px;
     box-shadow: 13px 11px 8px rgba(0, 0, 0, 0.2),
-      8px -8px 8px rgba(0, 0, 0, 0.2);
+    8px -8px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffffcf;
 
     @include mediaquery-mq-samll-550px {
       justify-content: center;
@@ -55,10 +55,10 @@
     }
 
     h2 {
+      margin-left: 30px;
       font-weight: bolder;
       font-size: 95px;
       color: #0e9815;
-      margin-left: 30px;
 
       @include mediaquery-mq-medium-small-650px {
         font-size: 70px;
@@ -75,8 +75,8 @@
     grid-area: noticia1;
   }
   .news2 {
-    grid-area: noticia2;
     @extend .news-item;
+    grid-area: noticia2;
     background-color: #ffffffde;
     border-color: brown;
 
@@ -85,8 +85,8 @@
     }
   }
   .news3 {
-    grid-area: noticia3;
     @extend .news-item;
+    grid-area: noticia3;
     border-color: rgb(122, 45, 122);
 
     background-color: #ffffffde;
@@ -96,8 +96,8 @@
   }
 
   .footer {
-    grid-area: footer;
     @extend .news-item;
+    grid-area: footer;
 
     background-color: #ffffffde;
     border-color: rgb(3, 3, 97);

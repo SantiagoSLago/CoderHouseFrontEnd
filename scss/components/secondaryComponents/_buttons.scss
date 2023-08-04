@@ -4,19 +4,19 @@
 
 @mixin newItemButton{
 
-    border-radius: 15px;
+    width: 65px;
     border: 2px solid white;
+    border-radius: 15px;
     background-color: #1842b5;
     color: white;
-    width: 65px;
 
 }
 
 @mixin selectorButton{
-    border-radius: 8px;
-    border: none;
-    color: white;
-    background-color: #c2900f;
     align-self: center;
+    border: none;
+    border-radius: 8px;
+    background-color: #c2900f;
+    color: white;
    
 }

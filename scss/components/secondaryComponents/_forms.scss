@@ -88,9 +88,9 @@
 
         button {
           @include selectorButton();
-          margin-top: 10px;
           width: 30%;
           height: 35px;
+          margin-top: 10px;
         }
         @include hover-change-colors('.selector-button',#c2900f,white);
         @include hover-change-border('.selector-button',#c2900f);
@@ -111,7 +111,8 @@
           list-style-type: none;
 
           span {
-            text-decoration: underline 2px solid #c2900f;
+            text-decoration: underline 2px solid #c2900f; 
+            text-underline-offset: 0.2em;
           }
         }
       }
