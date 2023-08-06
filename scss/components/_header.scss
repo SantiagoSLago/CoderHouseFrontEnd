@@ -57,9 +57,11 @@ header {
   @include mediaquery-mq-large-960px {
     margin-left: 260px;
    
-    ul{
+    .header-nav-list{
       width: 440px;
     }
+
+    
   }
 
   
@@ -97,14 +99,19 @@ header {
       flex-direction: column;
     }
 
-ul{
-  width: auto;
-}
+    .header-nav-list{
+      width: auto;
+    }
+
+
 
   }
 }
 
 ////////////////////////// HEADER WITH FILTER MENU //////////////////////////
+
+
+
 
 @include mediaquery-mq-medium-862px {
   #filter-header {
@@ -121,4 +128,6 @@ ul{
     width: 90%;
     display: flex;
   }
+
+  
 }
