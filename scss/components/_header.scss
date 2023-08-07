@@ -1,6 +1,5 @@
 @import "./scss/utilities/mediaquery";
-@import './scss/utilities/animations';
-
+@import "./scss/utilities/animations";
 
 ////////////////////////// HEADER GENERAL STYLES //////////////////////////
 header {
@@ -12,21 +11,9 @@ header {
 
   .navbar {
     display: none;
-    --bs-navbar-toggler-border-radius: 45px;
+    width: 55px;
+    --bs-btn-border-color: rgb(255, 193, 7);border-radius: 15px;
   }
-
-  .navbar-dark {
-    --bs-navbar-toggler-border-color: rgb(255, 193, 7);
-  }
-
-  :root {
-    --bs-border-width: 3px;
-  }
-
-  .bg-dark {
-    background-color: transparent !important;
-  }
-
   /*---*/
 
   .header-nav-menu {
@@ -34,7 +21,7 @@ header {
   }
 
   .header-nav-list {
-    @include underline-from-center('.header-nav-list-item');
+    @include underline-from-center(".header-nav-list-item");
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
@@ -47,7 +34,26 @@ header {
       margin-right: 8px;
       margin-top: 13px;
     }
+  }
 
+  .offcanvas-menu {
+    .offcanvas-menu-list {
+      @include underline-from-center(".offcanvas-menu-list-item");
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0%;
+      
+
+      li {
+        margin-bottom: 10px;
+        a {
+          color: #c2900f;
+          font-size: larger;
+        }
+      }
+    }
   }
 
   .mobile-nav-list {
@@ -56,15 +62,11 @@ header {
 
   @include mediaquery-mq-large-960px {
     margin-left: 260px;
-   
-    .header-nav-list{
+
+    .header-nav-list {
       width: 440px;
     }
-
-    
   }
-
-  
 
   @include mediaquery-mq-medium-862px {
     align-self: flex-end;
@@ -90,8 +92,6 @@ header {
     .header-nav-menu {
       display: none;
     }
-
-    
   }
 
   @include mediaquery-mq-samll-550px {
@@ -99,17 +99,13 @@ header {
       flex-direction: column;
     }
 
-    .header-nav-list{
+    .header-nav-list {
       width: auto;
     }
-
-
-
   }
 }
 
 ////////////////////////// HEADER WITH FILTER MENU //////////////////////////
-
 
 
 
@@ -128,6 +124,8 @@ header {
     width: 90%;
     display: flex;
   }
+}
 
-  
+.form-menu-btn{
+  margin-bottom: 20px;
 }

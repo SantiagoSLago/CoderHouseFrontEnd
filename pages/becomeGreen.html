@@ -8,8 +8,7 @@
     Dive into content that revolves around habits that will connect you with the enchanting magic of nature
 ">
     <!---META KEYWORDS-->
-    <meta name="keywords"
-        content="Dojo,Personal Development, Mindfullnes,Newsletter,Ennlightment,Self-Discovery,Entertainment,
+    <meta name="keywords" content="Dojo,Personal Development, Mindfullnes,Newsletter,Ennlightment,Self-Discovery,Entertainment,
         Nature, Become Green, Green Habits, Community">
     <!---OPEN GRAPH-->
     <meta property="og:type" content="website">
@@ -29,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
     <title>DOJO | Become Green</title>
@@ -39,25 +38,11 @@
     <header id="filter-header">
         <div class="header-button-container">
             <button class="btn btn-primary btn-filter-canva" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Filter</button>
-            <div class="collapse" id="navbarToggleExternalContent">
-                <div class="bg-dark p-4">
-                    <ul class="header-nav-list mobile-nav-list">
-                        <li class="header-nav-list-item"><a href="../index.html">Home</a></li>
-                        <li class="header-nav-list-item"><a href="../pages/library.html">Library</a></li>
-                        <li class="header-nav-list-item"><a href="../pages/streaming.html">Streaming</a></li>
-                        <li class="header-nav-list-item"><a href="../pages/becomeGreen.html">Become Green</a></li>
-                        <li class="header-nav-list-item"><a href="../pages/form.html">Contact Us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <nav class="navbar navbar-dark bg-dark">
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+            <nav class="navbar">
                 <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <button class="btn btn-primary btn-filter-canva" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Filter</button>
                 </div>
             </nav>
         </div>
@@ -73,40 +58,55 @@
         </div>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
-                <h3 class="offcanvas-title" id="offcanvasRightLabel">FILTER</h3>
+                <h2 class="offcanvas-title" id="offcanvasRightLabel">Filter</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <hr>
+
                 <div class="filter-section">
-                    <h3>Topic</h3>
-                    <ul>
-                        <li class="filter-list-item">Meditation</li>
-                        <li class="filter-list-item">Ted Talk</li>
-                        <li class="filter-list-item">Audiobooks</li>
-                        <li class="filter-list-item">Tutorial</li>
-                        <li class="filter-list-item">Music</li>
-                        <li class="filter-list-item">Seminar</li>
-                    </ul>
+                    <div>
+                        <h3>Topic</h3>
+                        <ul>
+                            <li class="filter-list-item">Meditation</li>
+                            <li class="filter-list-item">Ted Talk</li>
+                            <li class="filter-list-item">Audiobooks</li>
+                            <li class="filter-list-item">Tutorial</li>
+                            <li class="filter-list-item">Music</li>
+                            <li class="filter-list-item">Seminar</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Language</h3>
+                        <span>English<input type="checkbox"></span>
+                        <span>Español<input type="checkbox"></span>
+                        <span>Francais<input type="checkbox"></span>
+                    </div>
+                    <div>
+                        <h3>Autor</h3>
+                        <input type="search" class="input-search-autor">
+                        <button class="btn-search-autor selector-button">search</button>
+                    </div>
+                    <div>
+                        <h3>Date</h3>
+                        <input type="date" class="input-search-date">
+                    </div>
                 </div>
-                <hr>
-                <div class="filter-section checkbox">
-                    <h3>Language</h3>
-                    <span>English<input type="checkbox"></span>
-                    <span>Español<input type="checkbox"></span>
-                    <span>Francais<input type="checkbox"></span>
-                </div>
-                <hr>
-                <div class="filter-section">
-                    <h3>Autor</h3>
-                    <input type="search" class="input-search-autor">
-                    <button class="btn-search-autor selector-button">search</button>
-                </div>
-                <hr>
-                <div class="filter-section">
-                    <h3>Date</h3>
-                    <input type="date" class="input-search-date">
-                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><img src="../img/Ellipse1.png"> DOJO</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body offcanvas-menu">
+                <ul class="offcanvas-menu-list">
+                    <li class="offcanvas-menu-list-item"><a href="../index.html">Home</a></li>
+                    <li class="offcanvas-menu-list-item"><a href="../pages/library.html">Library</a></li>
+                    <li class="offcanvas-menu-list-item"><a href="../pages/streaming.html">Streaming</a></li>
+                    <li class="offcanvas-menu-list-item"><a href="../pages/becomeGreen.html">Become Green</a></li>
+                    <li class="offcanvas-menu-list-item"><a href="../pages/form.html">Contact Us</a></li>
+                </ul>
             </div>
         </div>
     </header>

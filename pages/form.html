@@ -39,29 +39,26 @@
 
 <body>
     <header>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <ul class="header-nav-list mobile-nav-list">
-                    <li class="header-nav-list-item"><a href="../index.html">Home</a></li>
-                    <li class="header-nav-list-item"><a href="../pages/library.html">Library</a></li>
-                    <li class="header-nav-list-item"><a href="../pages/streaming.html">Streaming</a></li>
-                    <li class="header-nav-list-item"><a href="../pages/becomeGreen.html">Become Green</a></li>
-                    <li class="header-nav-list-item"><a href="../form.html">Contact Us</a></li>
+        <button class="btn btn-primary navbar form-menu-btn" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title" id="offcanvasRightLabel"><img src="../img/Ellipse1.png"> DOJO </h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body offcanvas-menu">
+                <ul class="offcanvas-menu-list">
+                    <li class="offcanvas-menu-list-item"><a href="../index.html">Home</a></li>
+                    <li class="offcanvas-menu-list-item"><a href="../pages/library.html">Library</a></li>
+                    <li class="offcanvas-menu-list-item"><a href="../pages/streaming.html">Streaming</a></li>
+                    <li class="offcanvas-menu-list-item"><a href="../pages/becomeGreen.html">Become Green</a></li>
                 </ul>
             </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </nav>
         <div class="header-nav-menu">
             <ul class="header-nav-list">
-                <li class="header-nav-list-item"><a href="../index.html">Home</a></li>
+                <li class="offcanvas-menu-list-item"><a href="../index.html">Home</a></li>
                 <li class="header-nav-list-item"><a href="../pages/library.html">Library</a></li>
                 <li class="header-nav-list-item"><a href="../pages/streaming.html">Streaming</a></li>
                 <li class="header-nav-list-item"><a href="../pages/becomeGreen.html">Become Green</a></li>
