@@ -580,17 +580,17 @@ header {
 /*--Others--*/
 .logo-phrase {
   position: relative;
-  width: 350px;
-  top: 200px;
+  width: 18%;
+  top: 15%;
   left: 350px; }
   @media screen and (max-width: 862px) {
     .logo-phrase {
-      width: 250px;
+      width: 30%;
       top: 100px;
       left: 25px; } }
   @media screen and (max-width: 550px) {
     .logo-phrase {
-      width: 250px; } }
+      width: 45%; } }
 
 .link-icons {
   box-sizing: border-box;
@@ -651,7 +651,7 @@ header {
   background-color: white; }
 
 .main-links {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
   display: grid; }
   .main-links p {
     text-align: center;

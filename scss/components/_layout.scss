@@ -13,18 +13,18 @@
 
 .logo-phrase {
   position: relative;
-  width: 350px;
-  top: 200px;
+  width: 18%;
+  top: 15%;
   left: 350px;
 
   @include mediaquery-mq-medium-862px {
-    width: 250px;
+    width: 30%;
     top: 100px;
     left: 25px;
   }
 
   @include mediaquery-mq-samll-550px {
-    width: 250px;
+    width: 45%;
   }
 }
 
@@ -51,10 +51,8 @@
 );
 
 .main-links {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
   display: grid;
-  
-  
 
   p {
     text-align: center;
@@ -75,7 +73,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
 
   .main-links-link-container {
@@ -84,7 +81,7 @@
     grid-template-rows: 1fr 1fr;
     text-align: center;
     gap: 10px;
-    
+
     overflow-y: scroll;
 
     .icon-card {
@@ -125,8 +122,7 @@
     }
   }
 }
-
-@include hover-radial-out(".main-links");
+@include hover-radial-out('.main-links');
 
 ////////////////////////// STREAMING LAYOUT //////////////////////////
 @include scrollbar(".streaming-cards-container");
@@ -164,7 +160,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: auto
+  height: auto;
 }
 
 .streaming-spotify,

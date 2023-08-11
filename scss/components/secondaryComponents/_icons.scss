@@ -1,3 +1,5 @@
+
+
 @mixin icons-index-link-icons-large {
   box-sizing: border-box;
   font-size: 150px;
@@ -16,6 +18,18 @@
   padding-top: 23px;
   box-shadow: 1px 1px 12px #c2900f;
 }
+
+@mixin icons-index-link-icons-small {
+  font-size: 70px;
+  width: 135px;
+  height: 126px;
+}
+
+
+
+
+
+
 
 @mixin icons-index-link-icons-small {
   font-size: 70px;
