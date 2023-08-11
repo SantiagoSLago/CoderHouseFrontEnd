@@ -287,9 +287,23 @@ header {
   justify-content: space-evenly;
   width: 70%;
   border-radius: 90px;
-  background-color: rgba(255, 255, 255, 0.506); }
+  background-color: rgba(255, 255, 255, 0.506);
+  overflow-y: scroll; }
   #filter hr {
     width: 50%; }
+
+.filter-class::-webkit-scrollbar {
+  width: 0px; }
+
+.filter-class::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px; }
+
+.filter-class::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.filter-class::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); }
 
 .btn-filter-canva {
   display: none; }
@@ -789,7 +803,8 @@ header {
 #streaming {
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  height: auto; }
 
 .streaming-spotify,
 .streaming-youtube {
@@ -1162,9 +1177,23 @@ header {
   justify-content: space-evenly;
   width: 70%;
   border-radius: 90px;
-  background-color: rgba(255, 255, 255, 0.506); }
+  background-color: rgba(255, 255, 255, 0.506);
+  overflow-y: scroll; }
   #filter hr {
     width: 50%; }
+
+.filter-class::-webkit-scrollbar {
+  width: 0px; }
+
+.filter-class::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 3px; }
+
+.filter-class::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.filter-class::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); }
 
 .btn-filter-canva {
   display: none; }
