@@ -1,45 +1,36 @@
-@import './scss/utilities/variables';
-
-
+@import "./scss/utilities/variables";
 
 * {
-    font-family: $font;
-  }
+  font-family: $font;
+}
 
+a {
+  text-decoration: none;
+  color: nth($colors, 1);
+}
 
+a:hover {
+  color: white;
+}
 
+h1 {
+  font-size: 50px;
+}
 
-  a {
-    text-decoration: none;
-    color: nth($colors, 1)
-  }
+body {
+  margin: 0%;
+  background-image: url(../img/Fondo_comprimido.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
-  a:hover{
-    color: white;
-  }
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
-
-
-
-  body {
-    margin: 0%;
-    background-image: url(../img/Fondo_comprimido.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-  
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-
-  section {
-    height: 100vh;
-    box-sizing: border-box;
-  }
-
-
-
-
-
+section {
+  height: 100vh;
+  box-sizing: border-box;
+}

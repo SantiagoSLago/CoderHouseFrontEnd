@@ -61,16 +61,12 @@
     font-weight: bold;
   }
 
-  h2 {
+  h1 {
     text-align: center;
-    font-size: 50px;
+    margin-top: 85px;
     margin-bottom: 25px;
-  }
-
-  hr {
-    background-color: #c2900f;
-    width: 18%;
-    height: 2px;
+    text-decoration: underline 3px solid #c2900f;
+    text-underline-offset: 0.3em;
   }
 
   .main-links-intro {
@@ -92,7 +88,7 @@
       align-items: center;
       justify-content: center;
 
-      h3 {
+      h2 {
         text-align: center;
         font-size: 25px;
         margin-top: 10px;
@@ -124,6 +120,8 @@
   }
 }
 
+@include hover-radial-out(".main-links");
+
 ////////////////////////// STREAMING LAYOUT //////////////////////////
 @include scrollbar(".streaming-cards-container");
 /*---Main Gneneral Settings--*/
@@ -131,7 +129,7 @@
 #streaming-page-main {
   display: grid;
   grid-template-columns: 80% 20%;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   margin-top: 50px;
   column-gap: 15px;
 
@@ -139,6 +137,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  h1 {
+    @include h1-styles;
+    align-self: center;
   }
 }
 
@@ -211,7 +214,13 @@
 @include scrollbar("#book-container");
 #book-catalog {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+
+  h1 {
+    @include h1-styles;
+  }
 }
 
 #book-container {
@@ -221,13 +230,11 @@
   flex-wrap: wrap;
 
   width: 80%;
+  height: 100%;
   border-radius: 10px;
-  margin-bottom: 15px;
   overflow-y: scroll;
   border: 3px inset #ddac2b;
   background-color: #fff2ce;
-
-
 }
 
 ////////////////////////// BECOME GREEN LAYOUT //////////////////////////
@@ -256,4 +263,19 @@
 ////////////////////////// FORMS LAYOUT //////////////////////////
 .forms-main-layout {
   @include contactForm;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 95%;
+
+  .forms-title-section {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 30px;
+
+    h1 {
+      @include h1-styles;
+    }
+  }
 }

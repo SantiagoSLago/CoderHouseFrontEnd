@@ -1,5 +1,6 @@
 @import "./scss/utilities/mediaquery";
 @import "./scss/utilities/animations";
+@import './scss/components/secondaryComponents/buttons';
 
 ////////////////////////// HEADER GENERAL STYLES //////////////////////////
 header {
@@ -9,10 +10,15 @@ header {
 
   /*---Bootstrap-Navbar Styling---*/
 
-  .navbar {
+  .navbar-menu-btn {
+    @include headerMenuButton;
+    margin-right: 15px;
     display: none;
-    width: 55px;
-    --bs-btn-border-color: rgb(255, 193, 7);border-radius: 15px;
+  }
+
+  .navbar-menu-btn:hover{
+    background-color: rgb(255, 193, 7);
+    border-color: rgb(255, 193, 7);;
   }
   /*---*/
 
@@ -123,9 +129,22 @@ header {
     align-items: center;
     width: 90%;
     display: flex;
+
+    .btn-menu-header{
+      @include headerMenuButton;
+    }
+
+    .btn-menu-header:hover{
+      background-color: rgb(255, 193, 7);
+    }
   }
+
+  
 }
+
+
 
 .form-menu-btn{
   margin-bottom: 20px;
 }
+

@@ -87,13 +87,12 @@
   }
 
   .btn-filter-canva {
-    display: block;
-    align-self: center;
-    justify-self: center;
-    width: 80px;
-    margin-right: 15px;
-    border-radius: 100px;
-    border: 3px solid #ffc107;
+    @include filterButton;
+  }
+
+  .btn-filter-canva:hover{
+    background-color: #ffc107;
+    border-color: #ffc107;
   }
 
   .btn-primary {

@@ -17,7 +17,6 @@
     <meta property="og:image" content="">
     <meta property="og:description" content="Welcome to our streaming section, our agora of ancient Athens, where you'll find captivating audiovisual content that will accompany you on your journey to self-discovery. Immerse yourself in the wisdom of contemporary philosophers as they share profound insights and thought-provoking ideas.
     Just like in the ancient agora, this digital space is a hub for intellectual exchange and personal growth">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -41,11 +40,12 @@
     <header id="filter-header">
         <div class="header-button-container">
             <button class="btn btn-primary btn-filter-canva" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Menu</button>
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Filter</button>
             <nav class="navbar">
                 <div class="container-fluid">
-                    <button class="btn btn-primary btn-filter-canva" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Filter</button>
+                    <button class="btn btn-primary btn-filter-canva btn-menu-header" type="button"
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                            class="fa-solid fa-bars"></i></button>
                 </div>
             </nav>
         </div>
@@ -56,17 +56,32 @@
                 <li class="header-nav-list-item"><a href="../pages/streaming.html">Streaming</a></li>
                 <li class="header-nav-list-item"><a href="../pages/becomeGreen.html">Become Green</a></li>
                 <li class="header-nav-list-item"><a href="../pages/form.html">Contact Us</a></li>
-
-                <img src="../img/Ellipse1.png" alt="">
+                <img src="../img/Ellipse1.png" alt="DOJO-logo">
             </ul>
         </div>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><img src="../img/Ellipse1.png"
+                        alt="DOJO-logo"> DOJO</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body offcanvas-menu">
+                <ul class="offcanvas-menu-list">
+                    <li class="offcanvas-menu-list-item"><a href="../index.html">Home</a></li>
+                    <li class="offcanvas-menu-list-item"><a href="../pages/library.html">Library</a></li>
+                    <li class="offcanvas-menu-list-item"><a href="../pages/streaming.html">Streaming</a></li>
+                    <li class="offcanvas-menu-list-item"><a href="../pages/becomeGreen.html">Become Green</a></li>
+                    <li class="offcanvas-menu-list-item"><a href="../pages/form.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+            aria-labelledby="offcanvasWithBothOptionsLabel">
             <div class="offcanvas-header">
                 <h2 class="offcanvas-title" id="offcanvasRightLabel">Filter</h2>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-
                 <div class="filter-section">
                     <div>
                         <h3>Topic</h3>
@@ -87,7 +102,6 @@
                     </div>
                     <div>
                         <h3>Autor</h3>
-
                         <input type="search" class="input-search-autor">
                         <button class="btn-search-autor selector-button">search</button>
                     </div>
@@ -95,39 +109,13 @@
                         <h3>Date</h3>
                         <input type="date" class="input-search-date">
                     </div>
-
-
-
-
-
-
-
                 </div>
-
-
-
-
-
             </div>
         </div>
-        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-            <div class="offcanvas-header">
-              <h2 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><img src="../img/Ellipse1.png" alt="DOJO-logo"> DOJO</h2>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body offcanvas-menu">
-                <ul class="offcanvas-menu-list">
-                    <li class="offcanvas-menu-list-item"><a href="../index.html">Home</a></li>
-                    <li class="offcanvas-menu-list-item"><a href="../pages/library.html">Library</a></li>
-                    <li class="offcanvas-menu-list-item"><a href="../pages/streaming.html">Streaming</a></li>
-                    <li class="offcanvas-menu-list-item"><a href="../pages/becomeGreen.html">Become Green</a></li>
-                    <li class="offcanvas-menu-list-item"><a href="../pages/form.html">Contact Us</a></li>
-                </ul>
-            </div>
-          </div>
     </header>
     <main id="streaming-page-main">
         <section id="streaming">
+            <h1>Streaming</h1>
             <div class="streaming-spotify">
                 <div class="streaming-title-card">
                     <h2>Spotify</h2>
@@ -264,8 +252,8 @@
             </div>
         </section>
     </main>
-    <footer>
 
+    <footer>
         <div class="footer-container-c1">
             <h4 id="footer-find-us-title">Where to find us</h4>
             <ul>
@@ -286,8 +274,6 @@
                 <i class="fa-brands fa-twitter footer-icons"></i>
             </div>
         </div>
-
-
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
