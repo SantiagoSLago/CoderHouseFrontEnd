@@ -82,7 +82,8 @@ footer {
 /*--COLOR PALET--*/
 /*--FONT STYLE--*/
 * {
-  font-family: "Assistant", sans-serif; }
+  font-family: "Assistant", sans-serif;
+  box-sizing: border-box; }
 
 a {
   text-decoration: none;
@@ -660,14 +661,14 @@ header {
     font-weight: bold; }
   .main-links h1 {
     text-align: center;
-    margin-top: 85px;
     margin-bottom: 25px;
     text-decoration: underline 3px solid #c2900f;
     text-underline-offset: 0.3em; }
   .main-links .main-links-intro {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    height: fit-content; }
   .main-links .main-links-link-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
