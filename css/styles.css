@@ -981,6 +981,9 @@ header {
         @media screen and (max-width: 650px) {
           #newsletter-section #newsletter-page-container .banner h1 {
             font-size: 70px; } }
+        @media screen and (max-width: 480px) {
+          #newsletter-section #newsletter-page-container .banner h1 {
+            font-size: 55px; } }
     #newsletter-section #newsletter-page-container .news-item, #newsletter-section #newsletter-page-container .news2, #newsletter-section #newsletter-page-container .news3, #newsletter-section #newsletter-page-container .footer {
       border: 3px solid green;
       border-radius: 15px;

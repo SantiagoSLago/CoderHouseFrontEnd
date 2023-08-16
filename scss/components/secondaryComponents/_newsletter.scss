@@ -65,6 +65,10 @@
       @include mediaquery-mq-medium-small-650px {
         font-size: 70px;
       }
+
+      @include mediaquery-mq-extra-small-480px{
+        font-size: 55px
+      }
     }
   }
 
